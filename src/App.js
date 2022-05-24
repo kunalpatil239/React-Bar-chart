@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Barchart from "./components/Barchart";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: "#edebeb", height: "100vh" }}>
+      <h3
+        style={{
+          textTransform: "uppercase",
+          padding: "3rem 2rem",
+          fontWeight: "500",
+        }}
+      >
+        Summery Of Engagement
+      </h3>
+      <div className="bar-holder">
+        <Barchart />
+      </div>
     </div>
   );
 }
